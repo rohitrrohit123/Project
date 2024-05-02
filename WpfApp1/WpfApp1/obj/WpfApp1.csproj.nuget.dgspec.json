@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WPF_SampleProject\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {}
+    "D:\\WPF_SampleProject\\Project\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {}
   },
   "projects": {
-    "D:\\WPF_SampleProject\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {
+    "D:\\WPF_SampleProject\\Project\\WpfApp1\\WpfApp1\\WpfApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WPF_SampleProject\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+        "projectUniqueName": "D:\\WPF_SampleProject\\Project\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
         "projectName": "WpfApp1",
-        "projectPath": "D:\\WPF_SampleProject\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+        "projectPath": "D:\\WPF_SampleProject\\Project\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
         "packagesPath": "C:\\Users\\Rohit.DS\\.nuget\\packages\\",
-        "outputPath": "D:\\WPF_SampleProject\\WpfApp1\\WpfApp1\\obj\\",
+        "outputPath": "D:\\WPF_SampleProject\\Project\\WpfApp1\\WpfApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\WPF_SampleProject\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\
+D:\WPF_SampleProject\Project\WpfApp1\WpfApp1\obj\Debug\net8.0-windows\
 WpfApp1
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\WPF_SampleProject\WpfApp1\WpfApp1\App.xaml
-11407045341
+D:\WPF_SampleProject\Project\WpfApp1\WpfApp1\App.xaml
+3-778813850
 
-6-294469655
+8-1446685071
 198-688555687
-MainWindow.xaml;
+Binding\SampleBinding.xaml;MainWindow.xaml;Templates\SampleTemplate.xaml;
 
-False
+True
 

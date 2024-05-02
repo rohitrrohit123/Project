@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jTlrgQBz3FznNGLSlE1s41B519KQcZgE7EiZmFHMMCV9oVgTufyPAk8uO7EGugU08mfQk8EYbaZC19ZL2unycw==",
+  "dgSpecHash": "kBHoUCi0pLOJ30m5ft6mKqHHzOP/1+RK70NUkDU1LjinlrANNrVirDSe6YvDC70ggTLxME7uGVTn8N5l506qPQ==",
   "success": true,
-  "projectFilePath": "D:\\WPF_SampleProject\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+  "projectFilePath": "D:\\WPF_SampleProject\\Project\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
