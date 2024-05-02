@@ -4,6 +4,12 @@
              xmlns:local="clr-namespace:WpfApp1"
              StartupUri="Templates/SampleTemplate.xaml">
     <Application.Resources>
-         
+        <ControlTemplate x:Key="ButtonTemplateInitial" TargetType="Button">
+            <Grid>
+                <Border CornerRadius="15" BorderBrush="Black" BorderThickness="2" Height="100" Width="100">
+                    <ContentPresenter Content="{TemplateBinding Content}"/>
+                </Border>
+            </Grid>
+        </ControlTemplate>
     </Application.Resources>
 </Application>

@@ -32,6 +32,7 @@
                 <ControlTemplate x:Key="myButton" TargetType="Button">
                     <Grid>
                         <Border Background="Teal" CornerRadius="15"></Border>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="Click me!" />
                     </Grid>
                 </ControlTemplate>
             </Button.Resources>
