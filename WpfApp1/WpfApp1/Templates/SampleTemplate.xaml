@@ -26,14 +26,69 @@
                 </ControlTemplate>
             </Button.Resources>
         </Button>-->
-
-        <Button Template="{DynamicResource myButton}" Content="Button" HorizontalAlignment="Left" Margin="-259,-96,0,0" VerticalAlignment="Top" Height="42" Width="146">
+        
+        <!-- Now Border acts as the Main control of this Button, so if we want to change some 
+        background color etc of the Button Control and we go to the Properties and change it, it 
+        will not affect the control because there is No CONNECTION with the Border and Our Control.
+        The Properties of Our Border(Current Main Control) and Button(Actual Control) are DISCONNECTED.
+        We have to connect these, means changing properties in Border and changing properties in the Actual Button,
+        should both result in the same thing. this is done using - TEMPLATE BINDING -->
+        
+        <!-- We cannot just TEMPLATE BIND any property of Border and Button. We can only BIND
+        the COMMON PROPERTIES because I cant bind a Property which is available only in Button with 
+        the Border because Border doesnt have that property at ALL, then how will it BIND to it
+        eg- FontSize, Only Button has it, Border doesnt have that.-->
+        <Button FontSize="12" Template="{DynamicResource myButton}" Content="BindingButton" HorizontalAlignment="Left" Margin="-259,-96,0,0"
+                VerticalAlignment="Top" Height="42" Width="146" Background="#FFCE1A1A">
             <Button.Resources>
                 <ControlTemplate x:Key="myButton" TargetType="Button">
                     <Grid>
-                        <Border Background="Teal" CornerRadius="15"></Border>
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" Content="Click me!" />
+                        <Border Background="{TemplateBinding Background}" CornerRadius="15"></Border>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center"/>
                     </Grid>
+                </ControlTemplate>
+            </Button.Resources>
+        </Button>
+        
+        
+        <!-- Triggers (Basically Actions and Reactions)
+        DIFFERENT FROM NORMAL TRIGGER -We have to use Control Template TRIGGERS INSIDE 
+        the Control Template. -->
+        
+        <!-- In TRIGGER we first Define a Property and its Value, means we will DEFINE what 
+        exactly should be our TRIGGER to SET the other Properties...
+        eg - IsMouseOver is my Property and Value is true means when my MouseComesOver my Control,
+        at that time SET the following properties. -->
+        
+        <!-- MAIN DIFFERENCE btw Normal and ControlTemplate SETTER : In addition to Property
+        and Value Tags in SETTER, we have to also tell it to which Control it should Target it,
+        TARGETNAME also matters, see why we are not giving the NAME of the ACTUAL CONTROL is that
+        while we are developing this CustomControl Template we dont know to which Actual Control it 
+        is going to be Applied, the Point is when we APPLY this ENTIRE CONTROL TEMPLATE to a Control,
+        it should have these Triggers. So from the Control Templates perspective, BORDER is the 
+        ACTUAL CONTROL.. so we have to provide the Border's name as TARGETNAME-->
+        
+        <!-- Same logic for TRIGGERS as well, If you want to Set any Property of our Border Control
+        to any particular Value, First of all that Property should be Supported by Border right. 
+        So only those Properties which Border Supports can be changed using Triggers -->
+        <Button FontSize="12" Template="{DynamicResource myButton}" Content="TriggerButton" HorizontalAlignment="Left" Margin="-259,-37,0,0"
+        VerticalAlignment="Top" Height="42" Width="146" BorderBrush="Black" Background="Beige">
+            <Button.Resources>
+                <ControlTemplate x:Key="myButton" TargetType="Button">
+                    <Grid>
+                        <Border Name="ForTrigger" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="15"></Border>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <!--ACTION-->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <!-- REACTION -->
+                            <Setter Property="Background" Value="Blue" TargetName="ForTrigger"/>
+                            <Setter Property="Cursor" Value="Hand" TargetName="ForTrigger"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Button.Resources>
         </Button>
