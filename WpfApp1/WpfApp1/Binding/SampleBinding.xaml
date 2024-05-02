@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.Binding.SampleBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Binding"
+        mc:Ignorable="d"
+        Title="SampleBinding" Height="450" Width="800">
+    <!-- Binding is basically establishing a connection betweeen two different Controls so that 
+    we can control the properties of one control using the properties of other control
+    But this can be done in two Ways : 1) Writing C# logic 2) Using Binding without writing any C# code-->
+    
+    <!-- Binding has 3 main Parts : 1) Binding SOURCE 2) Binding TARGET 3) Binding OBJECT
+    SOURCE : It is the Control from which we want to read the Data and the VALUE from it
+    (eg Slider and Textbox, as we move the Slider , txtbox width shud Increase, so in this case,
+    we have to read the Value from the SLIDER, so SLIDER BECOMES THE SOURCE)
+    
+    TARGET - Control whose VALUE we want to change BASED on the VALUE changed in the SOURCE
+    OBJECT - To Control the BINDING PROCESS btw the Source and Target
+    
+    3 TYPES
+    1) One Way - To CHANGE the Value of the TARGET based on the Changes in the SOURCE
+    2) Two Way - Bidirectional, if Target Value is changed, those changes will be REFLECTED in SOURCE
+    and Vice-Versa
+    3) One Way to Source - Exact Opposite of One Way (This is from Target to SOurce)-->
+    <Grid>
+        
+    </Grid>
+</Window>

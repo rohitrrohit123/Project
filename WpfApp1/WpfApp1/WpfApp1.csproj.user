@@ -13,6 +13,9 @@
     <Compile Update="Templates\SampleTemplate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Templates\TempTemplate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Binding\SampleBinding.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Templates\SampleTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Templates\TempTemplate.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
