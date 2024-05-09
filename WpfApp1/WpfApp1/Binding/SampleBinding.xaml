@@ -22,7 +22,9 @@
     1) One Way - To CHANGE the Value of the TARGET based on the Changes in the SOURCE
     2) Two Way - Bidirectional, if Target Value is changed, those changes will be REFLECTED in SOURCE
     and Vice-Versa
-    3) One Way to Source - Exact Opposite of One Way (This is from Target to SOurce)-->
+    3) One Way to Source - Exact Opposite of One Way (This is from Target to SOurce)
+    4) One Time - -->
+    
     <Grid>
         
     </Grid>
