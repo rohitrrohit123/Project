@@ -1,3 +1,6 @@
-/WpfApp1/.vs
-/WpfApp1/WpfApp1/bin
-/WpfApp1/WpfApp1/obj
+WpfApp1/.vs/
+WpfApp1/WpfApp1/bin/
+WpfApp1/WpfApp1/obj/
+.vs/
+bin/
+obj/
